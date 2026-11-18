@@ -141,6 +141,9 @@ function v2Advertisement(): Buffer {
 interface RepoCache {
   reach: Map<string, Set<string>>;
   packs: Map<string, Buffer>;
+  /** Whole-response memos: git clients re-ask with identical bytes, and a ref change is the only input. */
+  replies: Map<string, Buffer>;
+  signature: string;
 }
 
 const caches = new Map<string, RepoCache>();
@@ -153,10 +156,35 @@ function cacheFor(repo: Repository): RepoCache {
   const key = `${repo.owner.toLowerCase()}/${repo.name.toLowerCase()}`;
   let cache = caches.get(key);
   if (cache === undefined) {
-    cache = { reach: new Map(), packs: new Map() };
+    cache = { reach: new Map(), packs: new Map(), replies: new Map(), signature: '' };
     caches.set(key, cache);
   }
   return cache;
+}
+
+/**
+ * A cheap fingerprint of a repository's refs. Every reply this server builds is a pure function of
+ * the refs plus the request bytes, so a changed fingerprint drops the whole reply memo at once.
+ */
+function refsSignature(repo: Repository): string {
+  const parts: string[] = [repo.defaultBranch];
+  for (const [name, oid] of repo.refs) parts.push(`${name}=${oid}`);
+  return parts.sort().join('|');
+}
+
+/** Memoise a reply under the current refs; a stale entry is unreachable, never wrong. */
+function memoReply(repo: Repository, key: string, build: () => Buffer): Buffer {
+  const cache = cacheFor(repo);
+  const signature = refsSignature(repo);
+  if (cache.signature !== signature) {
+    cache.replies.clear();
+    cache.signature = signature;
+  }
+  const hit = cache.replies.get(key);
+  if (hit !== undefined) return hit;
+  const body = build();
+  if (cache.replies.size < 128) cache.replies.set(key, body);
+  return body;
 }
 
 /** Every object reachable from an id (commit -> tree -> blobs / subtrees / parents), memoised. */
@@ -617,12 +645,13 @@ export async function handleGit(req: IncomingMessage, res: ServerResponse, path:
     }
     if (service === 'git-upload-pack') {
       const wantsV2 = /version=2/.test(String(req.headers['git-protocol'] ?? ''));
-      const body = wantsV2 ? v2Advertisement() : v0Advertisement('git-upload-pack', repo);
+      const body = memoReply(repo, wantsV2 ? 'advert:v2' : 'advert:v0', () => (wantsV2 ? v2Advertisement() : v0Advertisement('git-upload-pack', repo)));
       send(res, 200, 'application/x-git-upload-pack-advertisement', body);
       return;
     }
     if (service === 'git-receive-pack') {
-      send(res, 200, 'application/x-git-receive-pack-advertisement', v0Advertisement('git-receive-pack', repo));
+      const body = memoReply(repo, 'advert:receive', () => v0Advertisement('git-receive-pack', repo));
+      send(res, 200, 'application/x-git-receive-pack-advertisement', body);
       return;
     }
     fail(res, 404, 'Not Found');
@@ -649,17 +678,18 @@ export async function handleGit(req: IncomingMessage, res: ServerResponse, path:
   }
 
   const wantsV2 = /version=2/.test(String(req.headers['git-protocol'] ?? ''));
+  const key = `${wantsV2 ? 'v2' : 'v0'}|${body.toString('latin1')}`;
   if (!wantsV2) {
-    send(res, 200, 'application/x-git-upload-pack-result', handleFetchV0(repo, body));
+    send(res, 200, 'application/x-git-upload-pack-result', memoReply(repo, key, () => handleFetchV0(repo, body)));
     return;
   }
   const request = parseV2Request(body);
   if (request.command === 'ls-refs') {
-    send(res, 200, 'application/x-git-upload-pack-result', handleLsRefs(repo, request.args));
+    send(res, 200, 'application/x-git-upload-pack-result', memoReply(repo, key, () => handleLsRefs(repo, request.args)));
     return;
   }
   if (request.command === 'fetch') {
-    send(res, 200, 'application/x-git-upload-pack-result', handleFetchV2(repo, request.args));
+    send(res, 200, 'application/x-git-upload-pack-result', memoReply(repo, key, () => handleFetchV2(repo, request.args)));
     return;
   }
   fail(res, 400, 'unknown upload-pack command');
