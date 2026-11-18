@@ -4,9 +4,10 @@
 
     scores  {"agent":0,"feature":525,"perf":185,"perf_p50_us":231746,"score":710,"working":1}
     counts  git 30/30, graphql 20/20, issues 15/15, mcp 0/15, pulls 20/20, protocol 5/5, repos 15/15
-    passed  85/120
+    passed  105/120
 
-`state.json` sha256 `23a2b97b…` on two consecutive full grades, byte for byte.
+`state.json` sha256 `23a2b97b…` on two consecutive full grades, byte for byte. The same run before
+`graphql.ts` landed was 85/120 (feature 425); the 20 GraphQL checks are what moved it.
 
 ## Files
 
