@@ -64,7 +64,7 @@ function userJson(login: string): Record<string, unknown> {
 }
 
 /** The repository object, in GitHub's field names. */
-function repoJson(repo: Repository): Record<string, unknown> {
+export function repoJson(repo: Repository): Record<string, unknown> {
   return {
     id: repo.id,
     node_id: `R_${repo.id}`,
@@ -99,7 +99,7 @@ function issueLabels(repo: Repository, issue: Issue): Record<string, unknown>[] 
 }
 
 /** An issue object. */
-function issueJson(repo: Repository, issue: Issue): Record<string, unknown> {
+export function issueJson(repo: Repository, issue: Issue): Record<string, unknown> {
   return {
     id: issue.id,
     node_id: `I_${issue.id}`,
@@ -138,7 +138,7 @@ function refPair(repo: Repository, branch: string): Record<string, unknown> {
 }
 
 /** A pull request object. */
-function pullJson(repo: Repository, pull: PullRequest): Record<string, unknown> {
+export function pullJson(repo: Repository, pull: PullRequest): Record<string, unknown> {
   return {
     id: pull.id,
     node_id: `P_${pull.id}`,
