@@ -452,12 +452,6 @@ function findPullById(id: string): { repo: Repository; pull: PullRequest } | und
 
 // ---------------------------------------------------------------- store helpers (same rules as REST)
 
-/** The file map at a commit, or an empty map when it has none. */
-function filesOf(repo: Repository, branch: string): Map<string, FileEntry> {
-  const sha = forge.branchSha(repo, branch);
-  return sha === undefined ? new Map() : forge.filesAt(sha);
-}
-
 /** Whether two branches changed the same path since their merge base (the REST merge rule). */
 function branchesConflict(repo: Repository, headSha: string, baseSha: string): boolean {
   const base = forge.mergeBase(headSha, baseSha);
