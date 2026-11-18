@@ -47,6 +47,7 @@ protocol work. It is worth ~10–18 perf points, against 200 agent points still 
 
 ## Next: M3 is already in, M4 is the gap
 
-`graphql.ts` landed during this milestone (20/20) and is not part of the git work. `mcp.ts` is still
+`graphql.ts` landed during this milestone (20/20) — a parallel session wrote it into this tree while
+the git work was running, and my `git add -A` commits swept it in. It is not part of the git work. `mcp.ts` is still
 the 336-byte stub: it is the whole `mcp` group (15 checks = 75 feature points) *and* the entire agent
 column (200 points), i.e. the largest single block left on the board.
