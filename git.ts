@@ -27,7 +27,7 @@ import {
 const ZERO_OID = '0'.repeat(40);
 
 /** Capabilities the receive-pack advertisement offers: exactly what this server honours. */
-const RECEIVE_CAPS = ['report-status', 'sideband-64k', 'delete-refs', 'ofs-delta', 'agent=forge/1.0'];
+const RECEIVE_CAPS = ['report-status', 'side-band-64k', 'delete-refs', 'ofs-delta', 'agent=forge/1.0'];
 const UPLOAD_V0_CAPS = ['side-band-64k', 'ofs-delta', 'no-progress', 'agent=forge/1.0'];
 const UPLOAD_V2_CAPS = ['agent=forge/1.0', 'ls-refs=unborn', 'fetch=shallow', 'object-format=sha1'];
 
