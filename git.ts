@@ -290,11 +290,7 @@ function planFetch(repo: Repository, wants: readonly string[], haves: readonly s
     }
     for (const oid of held) selected.delete(oid);
     // A boundary the client already held but that is no longer a boundary has been deepened past.
-    for (const old of boundaries) {
-      const stillBoundary = shallow.includes(old);
-      if (!stillBoundary && !held.has(old)) unshallow.push(old);
-      else if (!stillBoundary && held.has(old)) unshallow.push(old);
-    }
+    for (const old of boundaries) if (!shallow.includes(old)) unshallow.push(old);
   } else {
     for (const want of wants) for (const oid of reachable(want, cache)) selected.add(oid);
     if (haves.length > 0) {
