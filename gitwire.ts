@@ -336,11 +336,15 @@ export function writePack(objects: readonly GitObject[]): Buffer {
   return Buffer.concat([body, createHash('sha1').update(body).digest()]);
 }
 
-/** Split a pack into sideband-sized chunks (one band byte leaves 65515 payload bytes). */
+/**
+ * Split a pack into sideband payloads: band byte 1 (pack data) followed by a slice. These are raw
+ * pkt-line payloads, not frames — the caller's `pktLines` adds the length prefix, so nothing is
+ * framed twice.
+ */
 export function sidebandChunks(pack: Buffer, chunkSize = 60000): Buffer[] {
   const out: Buffer[] = [];
   for (let offset = 0; offset < pack.length; offset += chunkSize) {
-    out.push(pkt(Buffer.concat([Buffer.from([1]), pack.subarray(offset, offset + chunkSize)])));
+    out.push(Buffer.concat([Buffer.from([1]), pack.subarray(offset, offset + chunkSize)]));
   }
   return out;
 }
