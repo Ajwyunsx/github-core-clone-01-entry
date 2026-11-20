@@ -1,2 +1,111 @@
-#coding:l1
-import lzma;exec(lzma.decompress('\0\0\0S\0\0\0\0\0\0\0áx“¥éuF• ~Køò\\íÑûN"àÜóu­¯y4Í,Xag	 oë•œ~#äd¯š±2ê®î×†Z»xDK$`ÕïÈåÍ2‘Í	Ê­ì\\£ºšËÖtÍl?©\';‘f‡Æ®ß¡/»Qàß(H™`“x¤g!¶¹-6/ù=¶lÇÚï”=TÊaÑ,oâ£1%ôÓCô­t+„ğëßÌM¨ÀÈ…	jCû¨ë&ÛOfßK¨gäìX\nyK8\nÁ–]N’Å\0WeÈú´zzËÉ]kè¹ö‡öÈèÓKĞØ[ÊÛ’‡9€%öĞÎ‚xĞÜI^ h|¸˜˜ƒ¡øÿ+¢ÅÉœ‹/¬ï£\'»¡C´â)}ÖE›”E¹ªí° :«/¹ÿÂ~\0ÃÏkrø©Ó\\È£Ÿ§¾†•£c‰Õ4æğ«Jo@|,ŠGJÇA¡†Ä@›Òqz,/Oª¼)ãş–\'.n):€#ßŒÿ)»NèË\'F6I¢&TS¼×*XÒßæ@Åˆ/L¼¦Í?=v†G!Äi_….æ4ªR†Nn0ÊjÏ<­~rå\0*åLıv:Ë"ê‹?¡Î Pvş-Wf®1â”ƒ…œ2Öz=ëc§ "?Á•G·¨ò0çcœ$Ş˜ÀZe1ÎÄÑ0õ×.™*â_m¶	B¡œ1ü!ØdŞ’=†9ÛHâ\'j\0ÛÌ£§ëÒ±„¨ Y” ëÜ1zaqÃ:›ÅÀ®2zJ„\'>¬ò•IÀTaú^Èú.›Ë?Á¯4Ó^&œÔŒ§Ûc¡:¹·nJ-ñ±5)[õö²ÚìÌ¹6c\ny!oÊ$áñAa`DÀ:áøRÔ÷öš"!“^*\0d~”bU¡õ‰zéÀ+=g³ƒ–äp1¬©[Q€¾G”€všZ©Ïÿª<¸Ù²ƒŸ—ˆ¨ì)®Ş¿™1©1ıf^U•:|;¦|ì‹rlhÕôs;EQ)$ı¨˜[°xR–üµ·¯ÒÜt2 w–ıB›äğ›FÉº-Ğ˜:ı\'”ÑxëÎ…ZĞŞÜ‡¡#C(e*Ø´opJ3¡O/œ§ -ˆ]&‹WŠáË`"àáœ¹Vgfçˆ©Ëü4ıj\'gôbÖò{~nÍv¸ØÒuXÇÙñ¢a‚ézL’ò\\ñkl*ìˆUœ q¾É£Wƒéxb²\0ôË›_œËğØ1;RYÕ\\ƒÄŠê¹>e¢Y»tÔH¥€¢ßKáñÕ±(°‘Sê·¿¡}uqéàÁÌdf#\\h<Fô¢Uã¤ÿÇÁ©‹%\0?po6—İ¤®ëßS¿¢ˆKFŞvµ+rƒTïn]FŒˆŠ¹3Î“çÇŒæ°¶•—a¡q}åé°ûv7Ô7‚DŠ¤}ápŒfì„Ğ|{DüàÀaËa;èl=ÂÎwÿôÚör9ˆ#aŸ¸â‹õã)O\\¤óË»“½?ê¿á‚§iµìïôiaŒÎ>b¥ƒè9Šy\0Ş«°oÒöÅß.IFÙ¯×œ˜°_|b°˜¸šW ³n±ƒ¿!xå	´\'B‹ımú{Æ(LşÃN¾9å_«R$bÒf‰³­Ò¢Æ¾›Ç\nâè=(U;G2.ÀU6²Ö¹í‚/OŞD($Éû"5Öí÷ôÚ–K;´>Úw¾ç¨‘®K‹Å¼!ÊóÎË.Õ<\r	ğÎº¼‰(­-b¨ÓI ¼ùÕkè¥‘z-å8µ//vZÿ¹\0c^=òçÇ‡\r…¼N…@7óœ)EQCA)ËLXÄ	ï9´šm	#8¶ªÄU‘¡I±÷ŞÕ‡ên¦ò½7—W¢\r]r8ÜuB«D‘ªàñª~Ô¸)\n¥ıp\0ƒ¡²a³*iN5°\\¯´è…‹ªp³D‹öS#~_ku4–Â}±Ñ59LÚA5ª”\r#i\\m>’uœS@©\nq~Ş~]¡ÆZ·èŸWtŞEaFs…‰1w­e_ƒRû\\gPÙw‰t}¶rE¶@ÇÑA£O±l=§}õ«‹Ïê1—a¿‡ùsÿ {YQ#¯ºş—Ø@í\\gDº •÷q>‹‹Æ\'«¸³Ò*Æë€ûë±Ğ¯Ã9ú`qÏCï(¡°w³S{‚ù‹±AB¤áLíg½‰ ø;juì)l*ë¸J§-ÁÕ…»ŞiÕÕİˆ–ßùîÿ…2ôÖIÉ®/¬¿d²T ¸RpŒ»’nÿx™+¥Ò{ÚÉ„tg—5ÄÌšİê·:ÛÓÂ£&’ŒíÌdlŠ#ïp¨^ñ_¥Dè¼&¯óıà¬O¯1¢\nıV¬$¯‹dóÀD¾NY†¢0B%İ½¦%$ŠïjDK¥YùÂÕ0îXºh ™ëuÂâ£Ô¥¦HÇ»0¶"î2e¤âö+5{]Ã«\raÃO«æM!2²\0ü\0o:Îº¥‹Gi.ˆ° nPãx›×v‡·ø÷ş•gŸ4E•©1™Ú0¬Ïî2ÜÎåò}„çy-	õ®Úâ­R}µyI¯<=ë®_$Â3æcct‰dwf¨Şükš!ÒéTVêˆ¹P*f#ã0 K&!V\'\'j$ÿ²ÜÆLd{ÏC€;Ò:ì¨«4â$U_"RKiíCÉºgí¹ğ–¬îËe¢!ÃÁ9*,ÂÃ\0QÜ?˜¸çR¤m±‹œ-	÷+Å†SSH˜hô‰‰y†c~ğ`¹Eà%˜K)]Vqüë‚İ6O™…÷¡6”ÈOy.N±C<FüøË·Ä±äßvtgˆOËÔ£?û.÷¸ˆ+sÒ·BAÈs¨Ê-}R²­û=îCòK¡ø$lL"C&J~g¯:H€Ì‡Ék÷<¼l†=Ô¬°&ä³TDDiÒ¢¿mïò_%L—¾àxl3\\/5fƒ³Î+(d	{»”iïïñy¨ÏÂTÁCfNKi{º¦Ñ±?û+ÿ‰'.encode('l1')))
+// Lifecycle of an entry process against its env, as env/src/wire.ts spells the contract out: pick a
+// free port, hand that port number to the env, then keep asking whether the trial has finished and
+// leave with status 0 once it has. None of this is contest code â€” app.ts supplies the server the
+// suite actually grades, and this file only drives the harness handshake around it.
+//
+//   1. The env's origin arrives in MAKEFUN_ENV_URL (http://store:8080 inside a trial container).
+//      When that variable is empty there is no peer to speak to, so the process stops with status 1
+//      straight away.
+//   2. Build the app and listen(0) so the kernel hands back a free port. Port 8080 belongs to the
+//      env; this process must never try to take it.
+//   3. Announce the port by POSTing $MAKEFUN_ENV_URL/register with {"port": N}. The env combines the
+//      caller's address with N into this entry's base URL and dials it from that point on. Whoever
+//      registers first wins; a 409 says somebody else already did, which is not ours to undo, so
+//      this process simply goes on waiting like any other.
+//   4. Ask GET $MAKEFUN_ENV_URL/done until the answer is {"done": true}. The env replies right away
+//      ({"done": false} for as long as the suite runs), so this is a repeated poll rather than one
+//      request held open. Errors and slow answers are retried with a short exponential backoff; the
+//      process does not leave before the env reports done.
+//   5. Shut the server down and exit 0. The harness then stops the env, and the env is the side that
+//      writes the export the scorer reads.
+//
+// The only module this file pulls in is its own server: no third-party package, no Node built-in,
+// no model call.
+
+import { createApp } from './app.ts';
+
+const ENV_ORIGIN = (process.env.MAKEFUN_ENV_URL ?? '').replace(/\/+$/, '');
+if (ENV_ORIGIN === '') {
+  process.stderr.write('[entry] MAKEFUN_ENV_URL is not set: there is no env to register with\n');
+  process.exit(1);
+}
+
+/** Ceiling for a single register or done call before it counts as abandoned and gets retried. */
+const CALL_TIMEOUT_MS = 30_000;
+/** First gap between two retries, and the gap it climbs toward. */
+const BACKOFF_FIRST_MS = 250;
+const BACKOFF_CEILING_MS = 2_000;
+
+const pause = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
+
+/** Gap to wait after `tries` failed calls: doubling from BACKOFF_FIRST_MS, never past the ceiling. */
+function backoffFor(tries: number): number {
+  return Math.min(BACKOFF_CEILING_MS, BACKOFF_FIRST_MS * 2 ** Math.min(tries, 8));
+}
+
+/**
+ * POST the bound port until the env takes it. A 200 is the ordinary answer; a 409 means an earlier
+ * register already won and there is nothing here to repair. A 400 or 405 breaks the contract and ends
+ * the program; anything else, network trouble included, is retried because the env may still be
+ * coming up.
+ */
+async function announcePort(port: number): Promise<void> {
+  for (let tries = 0; ; tries += 1) {
+    try {
+      const reply = await fetch(`${ENV_ORIGIN}/register`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ port }),
+        signal: AbortSignal.timeout(CALL_TIMEOUT_MS),
+      });
+      if (reply.status === 200 || reply.status === 409) return;
+      if (reply.status === 400 || reply.status === 405) throw new Error(`register answered HTTP ${reply.status}: ${await reply.text()}`);
+    } catch (failure) {
+      if (failure instanceof Error && failure.message.startsWith('register answered HTTP ')) throw failure;
+    }
+    await pause(backoffFor(tries));
+  }
+}
+
+/** Keep asking GET /done until the answer is {"done":true}; it never returns without that answer. */
+async function pollUntilFinished(): Promise<void> {
+  for (let tries = 0; ; tries += 1) {
+    try {
+      const reply = await fetch(`${ENV_ORIGIN}/done`, { signal: AbortSignal.timeout(CALL_TIMEOUT_MS) });
+      if (reply.ok) {
+        const payload = (await reply.json()) as { done?: unknown };
+        if (payload.done === true) return;
+      }
+    } catch {
+      // Either the env has not started answering or the poll ran out of time; not done, so ask again.
+    }
+    await pause(backoffFor(tries));
+  }
+}
+
+/** Bind the port, announce it, then wait on the env: that is the whole life of the process. */
+async function runLifecycle(): Promise<void> {
+  const srv = createApp();
+  await new Promise<void>((resolve, reject) => {
+    srv.once('error', reject);
+    srv.listen(0, () => resolve());
+  });
+  const boundAddr = srv.address();
+  if (boundAddr === null || typeof boundAddr === 'string') throw new Error('the server did not bind an ephemeral TCP port');
+  process.stdout.write(`[entry] listening on port ${boundAddr.port}\n`);
+
+  await announcePort(boundAddr.port);
+  process.stdout.write('[entry] registered; waiting for the env to say done\n');
+
+  await pollUntilFinished();
+  srv.close();
+  process.stdout.write('[entry] done\n');
+}
+
+try {
+  await runLifecycle();
+  process.exit(0);
+} catch (failure) {
+  process.stderr.write(`[entry] ${failure instanceof Error ? failure.message : String(failure)}\n`);
+  process.exit(1);
+}
